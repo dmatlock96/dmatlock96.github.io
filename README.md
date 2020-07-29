@@ -2,11 +2,11 @@
 
 Daniel Matlock (matlock4@illinois.edu) - University of Illinois at Urbana-Champaign
 
-This repository is for the University of Illinois at Urbana-Champaign MCS-DS CS 498 Data Visualization summer 2019 assignment - Narrative Visualization and published to Github Page per instructor's request.
+This repository is for the University of Illinois at Urbana-Champaign MCS-DS CS 498 Data Visualization summer 2020 assignment - Narrative Visualization and published to Github Page per instructor's request.
 
 ```
-Github Page for demo: https://freesoft.github.io/UIUC-CS498_DV_Narrative_Visualization/
-Git Repo: https://github.com/freesoft/UIUC-CS498_DV_Narrative_Visualization/
+Github Page for demo: https://dmatlock96.github.io/
+Git Repo: https://github.com/dmatlock96/dmatlock96.github.io
 ```
 
 This doc contains a several sections, including `Review Criteria` by instructors, to explain the result of narrative visualization.
