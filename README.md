@@ -1,6 +1,6 @@
 # UIUC CS 498 Data Visualization Narrative Visualization
 
-Wonhee Jung (wonheej2@illinois.edu) - University of Illinois at Urbana-Champaign
+Daniel Matlock (matlock4@illinois.edu) - University of Illinois at Urbana-Champaign
 
 This repository is for the University of Illinois at Urbana-Champaign MCS-DS CS 498 Data Visualization summer 2019 assignment - Narrative Visualization and published to Github Page per instructor's request.
 
