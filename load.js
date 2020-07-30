@@ -34,7 +34,7 @@ var yScale = d3.scaleLinear().range([height, 0]);
 
 // x,y axis
 var xAxis = d3.axisBottom().scale(xScale).tickFormat(d3.format("d"));
-var yAxis = d3.axisLeft().scale(yScale);
+var yAxis = d3.axisLeft().scale(yScale).tickFormat(function(d){return d+ "%"});;
 
 // line chart related
 var valueline = d3.line()
