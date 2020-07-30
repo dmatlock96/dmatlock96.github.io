@@ -1,5 +1,5 @@
-const yearStart = 2000;
-const yearEnd = 2017;
+const yearStart = 2005;
+const yearEnd = 2020;
 const totalNoOfCountriesToLoad = 400;
 
 const margin = {top: 20, right: 120, bottom: 50, left: 50},
@@ -33,7 +33,7 @@ var xScale = d3.scaleLinear().range([0,width]);
 var yScale = d3.scaleLinear().range([height, 0]);    
 
 // x,y axis
-var xAxis = d3.axisBottom().scale(xScale);
+var xAxis = d3.axisBottom().scale(xScale).tickFormat(d3.format("d"));
 var yAxis = d3.axisLeft().scale(yScale);
 
 // line chart related
@@ -181,13 +181,13 @@ function draw(countryCode, countrylabel, type) {
     console.log("country in draw():", countryCode);
 
     if (type == 0){
-        loadEmploymentByCountryCode(countryCode, "total", drawChart(countryCode, countrylabel, "orange"));
+        loadEmploymentByCountryCode(countryCode, "total", drawChart(countryCode, countrylabel, "red"));
     }
     else if (type == 1){
-        loadEmploymentByCountryCode(countryCode, "male", drawChart(countryCode, countrylabel, "blue"));
+        loadEmploymentByCountryCode(countryCode, "male", drawChart(countryCode, countrylabel, "green"));
     }
     else if (type == 2){
-        loadEmploymentByCountryCode(countryCode, "female", drawChart(countryCode, countrylabel, "red"));
+        loadEmploymentByCountryCode(countryCode, "female", drawChart(countryCode, countrylabel, "blue"));
     }
     else {
         console.log("error in draw(), type:", type);
