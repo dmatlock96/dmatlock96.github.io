@@ -3,11 +3,11 @@
         <title>CS 498 Narrative Visualization Summer 2020</title>
         <script src="https://code.jquery.com/jquery-latest.min.js"></script>
         <link href="d3.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://rawgithub.com/Caged/d3-tip/master/examples/example-styles.css">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"></script>
     </head>
 <!-- load all country names and then draw World data first -->
 <body>
@@ -19,10 +19,10 @@
     <div id="step1" class="container-fluid" style="height:300px">
         <div>
             <p>
-                <h1>World wage and salary employment rate</h1>
-                This scene shows the trend of worldwide average wage and salaried workers, % of total employment from 2000 to 2017.<br/>
-                As you can see in the plot, the percentage of worldwide wage and salary workers has been increasing, which imply that the rate of self-employed worker has been decreasing for the last 17 years.<br/><br/>
-                <i>Data used for the scene comes from WDI(World Bank) in realtime by their APIs, not using pre-loaded CSV file.</i><br/>
+                <h1>World Percent of Employment Rate</h1>
+                This scene shows the trend of the percent of worldwide total employment from 2005 to 2020.<br/>
+                This plot demonstrates the percentage of worldwide workers has been increasing, which means that the developing countries are increasing in overall employment for the last 15 years.<br/><br/>
+                <i>This data is from the World Bank Indicators (WDI). I obtained this data using their APIs, not using pre-loaded CSV file.</i><br/>
             </p>
             <p><div id="to_step2"><a href="#">View next >>></a></div></p>
         </div>
@@ -100,7 +100,8 @@
  </div>
 
  <div class="container-fluid">
-    <h4>About the indicator in WDI:</h4>
+    <h4>WDI Data Information:</h4>
+    <i>Source: https://databank.worldbank.org/metadataglossary/gender-statistics/series/SL.EMP.SELF.MA.ZS</i><br/>
     <blockquote>
             The indicator of status in employment distinguishes between two categories of the total employed. These are: (a) wage and salaried workers (also known as employees); and (b) self-employed workers. Self-employed group is broken down in the subcategories: self-employed workers with employees (employers), self-employed workers without employees (own-account workers), members of producers' cooperatives and contributing family workers (also known as unpaid family workers). Vulnerable employment refers to the sum of contributing family workers and own-account workers. The series is part of the ILO estimates and is harmonized to ensure comparability across countries and over time by accounting for differences in data source, scope of coverage, methodology, and other country-specific factors. The estimates are based mainly on nationally representative labor force surveys, with other sources (population censuses and nationally reported estimates) used only when no survey data are available.
     </blockquote>
