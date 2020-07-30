@@ -181,13 +181,13 @@ function draw(countryCode, countrylabel, type) {
     console.log("country in draw():", countryCode);
 
     if (type == 0){
-        loadEmploymentByCountryCode(countryCode, "total", drawChart(countryCode, countrylabel, "orange"));
+        loadEmploymentByCountryCode(countryCode, "total", drawChart(countryCode, countrylabel, "red"));
     }
     else if (type == 1){
-        loadEmploymentByCountryCode(countryCode, "male", drawChart(countryCode, countrylabel, "blue"));
+        loadEmploymentByCountryCode(countryCode, "male", drawChart(countryCode, countrylabel, "green"));
     }
     else if (type == 2){
-        loadEmploymentByCountryCode(countryCode, "female", drawChart(countryCode, countrylabel, "red"));
+        loadEmploymentByCountryCode(countryCode, "female", drawChart(countryCode, countrylabel, "blue"));
     }
     else {
         console.log("error in draw(), type:", type);
