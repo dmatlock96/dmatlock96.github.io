@@ -257,7 +257,7 @@ function drawChart(countryCode, countrylabel, color){
 
         /* Initialize tooltip for datapoint */
         tip = d3.tip().attr('class', 'd3-tip').offset([-5, 5]).html(function(d) {
-            return "<strong style='color:" + color + "'>" + countryCode + " " + floatFormatValue(d.value)  + "</strong>"; 
+            return "<strong>" + countryCode + "</strong> <span style='color:" + color + "'>" + " " + floatFormatValue(d.value) + "</span></span>";
         });   
 
         var path = innerChart.append("g").append("path")
