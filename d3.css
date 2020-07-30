@@ -38,7 +38,7 @@ path {
     stroke: #fff;
 }
 
-.ticks path {stroke:white;opacity:0.1} 
+.ticks path {fill: none; stroke:white;} 
 
 .content {
     max-width: 800px;
