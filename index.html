@@ -3,14 +3,11 @@
         <title>Narrative Visualization</title>
         <script src="https://code.jquery.com/jquery-latest.min.js"></script>
         <link href="d3.css" rel="stylesheet" type="text/css">
-
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://rawgithub.com/Caged/d3-tip/master/examples/example-styles.css">
-
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
     </head>
 <!-- load all country names and then draw World data first -->
 <body>
@@ -18,7 +15,6 @@
         <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
         The data for the country you chose doesn't exist.
     </div>
-
     <!-- Menu section -->
     <div id="step1" class="container-fluid" style="height:300px">
         <div>
@@ -31,7 +27,6 @@
             <p><div id="to_step2"><a href="#">View next >>></a></div></p>
         </div>
     </div>
-
     <div id="step2" class="container-fluid" style="display:none;height:300px">
         <div>
             <p>
@@ -43,7 +38,6 @@
             <p><div id="to_step3"><a href="#">View next >>></a></div></p>
         </div>
     </div>
-
     <div id="step3" class="container-fluid" style="display:none;height:300px">
         <div>
             <p>
@@ -55,8 +49,18 @@
             <p><div id="to_step4"><a href="#">View next >>></a></div></p>
         </div>
     </div>
-
     <div id="step4" class="container-fluid" style="display:none;height:300px">
+        <div>
+            <p>
+                <h1>4. Russia wage and salary employment rate</h1>
+                I was expecting that Russian should be in similar shape as I already checked with China's data, but it turned out that it's quite different situation for this employment category.<br/>
+                Russia's situation is more like what United States is right now in the chart. But what is this mean?<br/><br/>
+                Both China and Russia have been ruled by communist party for decades, and if what WDI indicator says is true for this wage&amp;salaried workes vs. self-employed, then shouldn't it be China who should has higher rate in the chart than Russia?
+            </p>
+            <p><div id="to_step5"><a href="#">View next >>></a></div></p>
+        </div>
+    </div>
+    <div id="step5" class="container-fluid" style="display:none;height:300px">
         <div>
             <p>
                 <h1>5. Try yourself!</h1>
@@ -75,7 +79,6 @@
             Female <input type="radio"name="type" value="2"/>
         </div>            
         <div id="country_select_container">
-
         </div>
     </div>
     
@@ -90,20 +93,18 @@
         draw('WLD', false, 0);
         draw('WLD', false, 1);
         draw('WLD', false, 2);
-    </script>
+     </script>
 
-<div class="container-fluid" style="height:50px">
-    <strong style="color:red">Red</strong> line is for total average, <strong style="color:green">green</strong> is for male, and <strong style="color:blue">blue</strong> is for female. <br/>
-</div>
+ <div class="container-fluid" style="height:50px">
+     <strong style="color:red">Red</strong> line is for total average, <strong style="color:green">green</strong> is for male, and <strong style="color:blue">blue</strong> is for female. <br/>
+ </div>
 
-<div class="container-fluid">
+ <div class="container-fluid">
     <h4>About the indicator in WDI:</h4>
     <blockquote>
             The indicator of status in employment distinguishes between two categories of the total employed. These are: (a) wage and salaried workers (also known as employees); and (b) self-employed workers. Self-employed group is broken down in the subcategories: self-employed workers with employees (employers), self-employed workers without employees (own-account workers), members of producers' cooperatives and contributing family workers (also known as unpaid family workers). Vulnerable employment refers to the sum of contributing family workers and own-account workers. The series is part of the ILO estimates and is harmonized to ensure comparability across countries and over time by accounting for differences in data source, scope of coverage, methodology, and other country-specific factors. The estimates are based mainly on nationally representative labor force surveys, with other sources (population censuses and nationally reported estimates) used only when no survey data are available.
     </blockquote>
 </div>
-
 </body>
 <!-- any D3 or SVG related code needs to be stay below of D3 inclusion or SVG so that it exists when javascript code try to access it. -->
-
 </html>
