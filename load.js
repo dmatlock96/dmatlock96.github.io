@@ -80,23 +80,12 @@ $("#to_step3").click(function() {
 $("#to_step4").click(function() {
     //d3.selectAll("path").remove();
     innerChart.selectAll("g").remove();
-    hide('#step3');
-    show('#step4');
-    draw("RUS", false, 0);
-    draw("RUS", false, 1);
-    draw("RUS", false, 2);
-})
-
-$("#to_step5").click(function() {
-    //d3.selectAll("path").remove();
-    innerChart.selectAll("g").remove();
     hide('#step4');
     loadCountries(addCountriesList);
     show('#step5');
     draw("WLD", true, 0);
     draw("USA", true, 0);
     draw("CHN", true, 0);
-    draw("RUS", true, 0);
     
 })
 
