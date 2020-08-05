@@ -5,7 +5,7 @@
 
 .focus circle {
     fill: none;
-    fill: green;
+    fill: black;
 }
 
 .focus text {
@@ -13,7 +13,7 @@
 }
 
 .tooltip {
-    fill: green;
+    fill: black;
 }
 
 .tooltip-date, .tooltip-likes {
@@ -22,16 +22,8 @@
 
 .line {
     fill: none;
-    stroke: green;
+    stroke: black;
     stroke-width: 2px;
-}
-
-.d3-tip {
-  line-height: 1;
-  font-weight: bold;
-  padding: 12px;
-  background: green;
-  border-radius: 2px;
 }
 
 path { 
@@ -41,7 +33,6 @@ path {
 }
 
 .dot {
-    fill: black;
     stroke: #fff;
 }
 
