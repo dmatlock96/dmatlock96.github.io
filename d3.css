@@ -35,13 +35,13 @@
 }
 
 path { 
-    stroke: white;
+    stroke: black;
     stroke-width: 2;
     fill: none;
 }
 
 .dot {
-    fill: white;
+    fill: black;
     stroke: #fff;
 }
 
