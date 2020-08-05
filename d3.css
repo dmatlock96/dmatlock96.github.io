@@ -5,7 +5,7 @@
 
 .focus circle {
     fill: none;
-    fill: white;
+    fill: green;
 }
 
 .focus text {
@@ -13,7 +13,7 @@
 }
 
 .tooltip {
-    fill: white;
+    fill: green;
 }
 
 .tooltip-date, .tooltip-likes {
@@ -22,7 +22,7 @@
 
 .line {
     fill: none;
-    stroke: white;
+    stroke: green;
     stroke-width: 2px;
 }
 
@@ -30,7 +30,7 @@
   line-height: 1;
   font-weight: bold;
   padding: 12px;
-  background: white;
+  background: green;
   border-radius: 2px;
 }
 
