@@ -5,7 +5,7 @@
 
 .focus circle {
     fill: none;
-    fill: black;
+    fill: white;
 }
 
 .focus text {
@@ -22,7 +22,7 @@
 
 .line {
     fill: none;
-    stroke: black;
+    stroke: white;
     stroke-width: 2px;
 }
 
