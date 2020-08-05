@@ -20,6 +20,12 @@
     font-weight: bold;
 }
 
+.line {
+    fill: none;
+    stroke: black;
+    stroke-width: 2px;
+}
+
 .d3-tip {
   line-height: 1;
   font-weight: bold;
@@ -28,20 +34,14 @@
   border-radius: 2px;
 }
 
-.line {
-    fill: none;
-    stroke: black;
-    stroke-width: 2px;
-}
-
 path { 
-    stroke: black;
+    stroke: white;
     stroke-width: 2;
     fill: none;
 }
 
 .dot {
-    fill: #000000;
+    fill: white;
     stroke: #fff;
 }
 
